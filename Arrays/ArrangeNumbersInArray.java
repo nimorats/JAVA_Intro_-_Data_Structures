@@ -1,3 +1,12 @@
+// Given an empty array and its size n, fill the array with numbers 1 to N in the following way :--> [1, 3, 5 .... , 6, 4, 2]
+
+// Input the sizr of the array N For example --> 6
+
+// Output should be a populated array of size N. For example ( using above value of N) [ 1, 3, 5, 6, 4, 2]
+
+
+import java.util.Scanner;
+
 public class ArrangeNumbersInArray {
 
 	public static int[] arrange(int[] arr, int n) {
@@ -20,14 +29,24 @@ public class ArrangeNumbersInArray {
 		}
 		return arr;
 	}
+	
+	public static void printArray(int[] arr) {
+		
+		for ( int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
+		
+	}
 
 	public static void main(String[] args) {
-		int[] arr = new int[7];
-		int[] result = arrange(arr, arr.length);
-		for ( int i = 0 ; i < result.length;i++) {
-
-			System.out.println(result[i]);
-		}
+		
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+		
+		int[] arr = new int[N];
+		int[] result = arrange(arr, N);
+		printArray(result);
+		sc.close();
 
 	}
 
