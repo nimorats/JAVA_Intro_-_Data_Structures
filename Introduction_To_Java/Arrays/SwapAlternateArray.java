@@ -1,8 +1,12 @@
+// Swap elements of array
+
+// Input will be a simple even numbered array to the function and it will return the array.
+
+// For example --> [1, 5, 3, 7, 2, 65, 8, 9] upon execution of this input we should get output [5, 1, 7, 3, 65, 2, 9, 8] 
+
 public class SwapAlternateArray {
 
 	public static int[] swapAlternate(int arr[]) {
-		//Your code goes here
-
 		for (int i = 0 ; i < arr.length;i = i + 2) {
 
 			int j = i + 1;
@@ -10,9 +14,7 @@ public class SwapAlternateArray {
 			temp = arr[i];
 			arr[i] = arr[j];
 			arr[j] = temp;
-
 		}
-
 		return arr;
 	}
 
