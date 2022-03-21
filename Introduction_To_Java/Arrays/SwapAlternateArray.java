@@ -7,7 +7,7 @@
 public class SwapAlternateArray {
 
 	public static int[] swapAlternate(int arr[]) {
-		for (int i = 0 ; i < arr.length;i = i + 2) {
+		for (int i = 0 ; i < arr.length - 1;i = i + 2) {
 
 			int j = i + 1;
 			int temp;
